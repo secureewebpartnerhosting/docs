@@ -38,17 +38,13 @@ shortTitle: Working with non-code files
 
 {% data variables.product.product_name %} can display several common image formats, including PNG, JPG, GIF, PSD, and SVG. In addition to simply displaying them, there are several ways to compare differences between versions of those image formats.
 
-{% note %}
-
-**Note:**
-* {% data variables.product.prodname_dotcom %} does not support comparing the differences between PSD files.
-* If you are using the Firefox browser, SVGs on {% data variables.product.prodname_dotcom %} may not render.
-
-{% endnote %}
+> [!NOTE]
+> * {% data variables.product.prodname_dotcom %} does not support comparing the differences between PSD files.
+> * If you are using the Firefox browser, SVGs on {% data variables.product.prodname_dotcom %} may not render.
 
 ### Viewing images
 
-You can directly browse and view images in your repository on {% data variables.location.product_location %}.
+You can directly browse and view images in your repository on {% data variables.product.prodname_dotcom %}.
 
 SVGs don't currently support inline scripting or animation.
 
@@ -60,7 +56,7 @@ You can visually compare images in three different modes: [2-up](#2-up), [swipe]
 
 **2-up** is the default mode; it gives you a quick glimpse of both images. In addition, if the image has changed size between versions, the actual dimension change is displayed. This should make it very apparent when things are resized, such as when assets are upgraded to higher resolutions.
 
-![Screenshot of a diff for an image in 2-up mode. The image on the right is outlined in green and larger than the image on the left, which is outlined in red.](/assets/images/help/repository/images-2up-view.png)
+![Screenshot of a diff for an image in 2-up mode. The larger image on the right is outlined in green. The image on the left is outlined in red.](/assets/images/help/repository/images-2up-view.png)
 
 #### Swipe
 
@@ -109,15 +105,12 @@ For example, if your model's URL is [`github.com/skalnik/secret-bear-clip/blob/m
 
 By default, the embedded renderer is 420 pixels wide by 620 pixels high, but you can customize the output by passing height and width variables as parameters at the end of the URL, such as `?height=300&width=500`.
 
-{% tip %}
-
-**Note**: `ref` can be a branch or the hash to an individual commit (like `2391ae`).
-
-{% endtip %}
+> [!NOTE]
+> `ref` can be a branch or the hash to an individual commit (like `2391ae`).
 
 ### Rendering in Markdown
 
-You can embed ASCII STL syntax directly in Markdown. For more information, see "[AUTOTITLE](/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-stl-3d-models)."
+You can embed ASCII STL syntax directly in Markdown. For more information, see [AUTOTITLE](/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-stl-3d-models).
 
 ## Rendering CSV and TSV data
 
@@ -125,7 +118,7 @@ You can embed ASCII STL syntax directly in Markdown. For more information, see "
 
 ![Screenshot of a rendered CSV file, with data shown in a table format.](/assets/images/help/repository/rendered-csv.png)
 
-When viewed, any _.csv_ or _.tsv_ file committed to a repository on {% data variables.location.product_location %} automatically renders as an interactive table, complete with headers and row numbering. By default, we'll always assume the first row is your header row.
+When viewed, any _.csv_ or _.tsv_ file committed to a repository on {% data variables.product.prodname_dotcom %} automatically renders as an interactive table, complete with headers and row numbering. By default, we'll always assume the first row is your header row.
 
 You can link to a particular row by clicking the row number, or select multiple rows by holding down the shift key. Just copy the URL and send it to a friend.
 
@@ -177,7 +170,7 @@ To see the changes made to the document as part of a commit, click {% octicon "f
 
 This "rich diff" highlights the code that has been added and removed.
 
-![Screenshot of the diff for a Markdown file. "@octo-org/core" is struck through, with a red background, followed by "@octocat", with a green background.](/assets/images/help/repository/rendered-prose-changes.png)
+![Screenshot of the diff for a Markdown file. The old text, "@octo-org/core", is struck out with a red background. The new text has a green background.](/assets/images/help/repository/rendered-prose-changes.png)
 
 ### Disabling Markdown rendering
 
@@ -185,11 +178,9 @@ This "rich diff" highlights the code that has been added and removed.
 
 ### Visualizing attribute changes
 
-We provide a tooltip
-describing changes to attributes that, unlike words, would not otherwise be visible in the rendered document. For example, if a link URL changes from one website to
-another, we'd show a tooltip like this:
+We provide a tooltip describing changes to attributes that, unlike words, would not otherwise be visible in the rendered document. For example, if a link URL changes from one website to another, we'd show a tooltip like this: "href: /octo-org-repo/blob/CONTRIBUTING -> /octo-org/octo-repo/blob/docs/CONTRIBUTING."
 
-![Screenshot of the diff for a Markdown file. A tooltip over a link says "href: /octo-org-repo/blob/CONTRIBUTING -> /octo-org/octo-repo/blob/docs/CONTRIBUTING."](/assets/images/help/repository/prose-diff-attributes.png)
+![Screenshot of the diff for a Markdown file. The tooltip over the "CONTRIBUTING file" link contains the URL changes from the example above.](/assets/images/help/repository/prose-diff-attributes.png)
 
 ### Commenting on changes
 
@@ -256,15 +247,12 @@ For example, if your map's URL is [github.com/benbalter/dc-wifi-social/blob/mast
 
 By default, the embedded map 420px x 620px, but you can customize the output by passing height and width variables as parameters at the end, such as `?height=300&width=500`.
 
-{% tip %}
-
-**Note**: `ref` can be a branch or the hash to an individual commit (like `2391ae`).
-
-{% endtip %}
+> [!NOTE]
+> `ref` can be a branch or the hash to an individual commit (like `2391ae`).
 
 ### Mapping in Markdown
 
-You can embed GeoJSON and TopoJSON directly in Markdown. For more information, see "[AUTOTITLE](/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-geojson-and-topojson-maps)."
+You can embed GeoJSON and TopoJSON directly in Markdown. For more information, see [AUTOTITLE](/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-geojson-and-topojson-maps).
 
 {% data reusables.advanced-formatting.administrator-must-enable-mapping %}
 
@@ -296,9 +284,9 @@ It may still be possible to render the data by converting the `.geojson` file to
 
 ## Working with Jupyter Notebook files on {% data variables.product.prodname_dotcom %}
 
-When you add Jupyter Notebook or IPython Notebook files with a _.ipynb_ extension on {% data variables.location.product_location %}, they will render as static HTML files in your repository.
+When you add Jupyter Notebook or IPython Notebook files with a _.ipynb_ extension on {% data variables.product.prodname_dotcom %}, they will render as static HTML files in your repository.
 
-The interactive features of the notebook, such as custom JavaScript plots, will not work in your repository on {% data variables.location.product_location %}. For an example, see [_Linking and Interactions.ipynb_](https://github.com/bokeh/bokeh-notebooks/blob/main/tutorial/06%20-%20Linking%20and%20Interactions.ipynb).
+The interactive features of the notebook, such as custom JavaScript plots, will not work in your repository on {% data variables.product.prodname_dotcom %}. For an example, see [_Linking and Interactions.ipynb_](https://github.com/bokeh/bokeh-notebooks/blob/main/tutorial/06%20-%20Linking%20and%20Interactions.ipynb).
 
 To view your Jupyter notebook with JavaScript content rendered or to share your notebook files with others you can use [nbviewer](https://nbviewer.jupyter.org/). For an example, see [_Linking and Interactions.ipynb_](https://nbviewer.jupyter.org/github/bokeh/bokeh-notebooks/blob/main/tutorial/06%20-%20Linking%20and%20Interactions.ipynb) rendered on nbviewer.
 
@@ -350,7 +338,7 @@ If the chart displays, but does not appear as you'd expect, you can create a new
 
 ### Mermaid in Markdown
 
-You can embed Mermaid syntax directly in Markdown. For more information, see "[AUTOTITLE](/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams)."
+You can embed Mermaid syntax directly in Markdown. For more information, see [AUTOTITLE](/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams).
 
 ### Further reading about Mermaid
 
