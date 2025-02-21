@@ -1,6 +1,6 @@
 {% rowheaders %}
 
-| Query name | Related CWEs | Default | Extended | Autofix |
+| Query name | Related CWEs | Default | Extended | {% data variables.product.prodname_copilot_autofix_short %} |
 | --- | --- | --- | --- | --- |
 | [`TrustManager` that accepts all certificates](https://codeql.github.com/codeql-query-help/java/java-insecure-trustmanager/) | 295 | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} |
 | [Android `WebView` that accepts all certificates](https://codeql.github.com/codeql-query-help/java/java-improper-webview-certificate-validation/) | 295 | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} |
@@ -30,6 +30,7 @@
 | [Improper verification of intent by broadcast receiver](https://codeql.github.com/codeql-query-help/java/java-improper-intent-verification/) | 925 | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} |
 | [Inefficient regular expression](https://codeql.github.com/codeql-query-help/java/java-redos/) | 1333, 730, 400 | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "x" aria-label="Not included" %} |
 | [Information exposure through a stack trace](https://codeql.github.com/codeql-query-help/java/java-stack-trace-exposure/) | 209, 497 | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} |
+| [Information exposure through an error message](https://codeql.github.com/codeql-query-help/java/java-error-message-exposure/) | 209 | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "x" aria-label="Not included" %} |
 | [Insecure Bean Validation](https://codeql.github.com/codeql-query-help/java/java-insecure-bean-validation/) | 094 | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} |
 | [Insecure LDAP authentication](https://codeql.github.com/codeql-query-help/java/java-insecure-ldap-auth/) | 522, 319 | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} |
 | [Insecure local authentication](https://codeql.github.com/codeql-query-help/java/java-android-insecure-local-authentication/) | 287 | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} |
@@ -83,6 +84,7 @@
 | [Exposure of sensitive information to notifications](https://codeql.github.com/codeql-query-help/java/java-android-sensitive-notification/) | 200 | {% octicon "x" aria-label="Not included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} |
 | [Exposure of sensitive information to UI text views](https://codeql.github.com/codeql-query-help/java/java-android-sensitive-text/) | 200 | {% octicon "x" aria-label="Not included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} |
 | [Hard-coded credential in API call](https://codeql.github.com/codeql-query-help/java/java-hardcoded-credential-api-call/) | 798 | {% octicon "x" aria-label="Not included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "x" aria-label="Not included" %} |
+| [HTTP request type unprotected from CSRF](https://codeql.github.com/codeql-query-help/java/java-csrf-unprotected-request-type/) | 352 | {% octicon "x" aria-label="Not included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "x" aria-label="Not included" %} |
 | [Improper validation of user-provided array index](https://codeql.github.com/codeql-query-help/java/java-improper-validation-of-array-index/) | 129 | {% octicon "x" aria-label="Not included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} |
 | [Improper validation of user-provided size used for array construction](https://codeql.github.com/codeql-query-help/java/java-improper-validation-of-array-construction/) | 129 | {% octicon "x" aria-label="Not included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} |
 | [Insecure basic authentication](https://codeql.github.com/codeql-query-help/java/java-insecure-basic-auth/) | 522, 319 | {% octicon "x" aria-label="Not included" %} | {% octicon "check" aria-label="Included" %} | {% octicon "check" aria-label="Included" %} |

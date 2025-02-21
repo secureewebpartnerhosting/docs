@@ -5,7 +5,7 @@ import stripAnsi from 'strip-ansi'
 import { visit } from 'unist-util-visit'
 import { distance } from 'fastest-levenshtein'
 import { getPathWithoutLanguage, getVersionStringFromPath } from '#src/frame/lib/path-utils.js'
-import { getNewVersionedPath } from '#src/archives/lib/old-versions-utils.js'
+import { getNewVersionedPath } from '#src/archives/lib/old-versions-utils.ts'
 import patterns from '#src/frame/lib/patterns.js'
 import { deprecated, latest } from '#src/versions/lib/enterprise-server-releases.js'
 import nonEnterpriseDefaultVersion from '#src/versions/lib/non-enterprise-default-version.js'
@@ -149,7 +149,7 @@ export default function rewriteLocalLinks(context) {
     })
 
     if (!isProd) {
-      // This runs when doing local preview, link checker tests, or
+      // This runs when doing local review, link checker tests, or
       // running a script like `update-internal-links.js`.
       visit(tree, matcherAnchorLinks, (node) => {
         for (const child of node.children || []) {
